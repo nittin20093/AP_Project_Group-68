@@ -1,0 +1,9 @@
+package application.CLASSES;
+
+public class Orc {
+    private int health;
+    private Coin coins;
+    
+
+
+}
