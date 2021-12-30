@@ -17,4 +17,8 @@
     <fullyQualifiedTypeName name="javafx.scene.input.MouseEvent"/>
     <fullyQualifiedTypeName name="application.CLASSES.Coin"/>
     <fullyQualifiedTypeName name="javafx.util.Duration"/>
+    <fullyQualifiedTypeName name="application.CLASSES.Orc"/>
+    <fullyQualifiedTypeName name="application.CLASSES.Collision"/>
+    <fullyQualifiedTypeName name="javafx.animation.AnimationTimer"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>

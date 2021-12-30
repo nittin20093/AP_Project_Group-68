@@ -1,5 +1,4 @@
 package application.CLASSES;
-import application.CLASSES.*;
 
 public class Orc extends Game_Objects{    // inheriting the Game_Objects class
 

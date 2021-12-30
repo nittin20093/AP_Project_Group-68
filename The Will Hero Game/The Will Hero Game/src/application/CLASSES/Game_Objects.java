@@ -1,10 +1,12 @@
 package application.CLASSES;
 
 import java.util.Objects;
+//import application.CLASSES.*;
+//import application.CLASSES.Collision;
 
 public class Game_Objects implements Collision{
 
-    private Coordinates coordinate;
+    private Coordinate coordinate;
     private int Obj_id;
     private String color;
     private static int incrementer=0;
@@ -17,11 +19,11 @@ public class Game_Objects implements Collision{
     public void collision(Game_Objects g) {
         // write code here
     }
-    public Coordinates get_coordinates(){
+    public Coordinate get_coordinates(){
         return coordinate;
     }
 
-    public void setCoordinate(Coordinates coor) {
+    public void setCoordinate(Coordinate coor) {
         this.coordinate = coor;
     }
 

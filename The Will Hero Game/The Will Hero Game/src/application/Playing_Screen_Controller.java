@@ -1,9 +1,9 @@
 package application;
 
 import java.net.URL;
+import javafx.animation.AnimationTimer;
 import application.CLASSES.*;
 import java.util.ResourceBundle;
-
 import javafx.animation.ScaleTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.EventHandler;
@@ -22,10 +22,21 @@ public class Playing_Screen_Controller implements Initializable{
 	private ImageView penguin_hero;
 	@FXML
 	private AnchorPane anchorPane;
+	
+	AnimationTimer at = new AnimationTimer() {
+		@Override
+		public void handle(long time) {
+			if(penguin_hero.getBoundsInParent().intersects(red_orc1.getBoundsInParent())) {
+				System.out.println("colll\n");
+			}
+		}
+	};
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		Orc or = new Orc();
+		at.start();
+		
 		TranslateTransition translate_pos = new TranslateTransition();
 		TranslateTransition translate_pos_x = new TranslateTransition();
 		TranslateTransition translate_pos2 = new TranslateTransition();
@@ -77,6 +88,12 @@ public class Playing_Screen_Controller implements Initializable{
 			System.out.println("hora\n");
 			break;
 		}
+		
+//		while(true) {
+//			if(penguin_hero.getBoundsInParent().intersects(red_orc1.getBoundsInParent())) {
+//				System.out.println("COLLLLLSISOOSN");
+//			}
+//		}
 		
 	}
 	
